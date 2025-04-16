@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Niyonkuru Fiston Portfolio</title>
+  <style>
+    
+body {
+  color: beige;
+ background-image:url(bg.png);
+  margin: 0;
+}
+nav {
+  color: blue;
+  font-size: 40px;
+  height: 100px;
+  background: skyblue;
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  color: blue;
+  margin: 0 15px;
+  text-decoration:green none;
+  font-weight: bold;
+}
+#home{
+  background-image: url(bg2.png);
+  color: lemonchiffon;
+}
+section {
+  padding: 20px;
+}
+.btn {
+
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+#nav {
+    cursor: pointer;
+    font-size: 45px;
+    width: 100%;
+    height: 100px;
+    background-color: skyblue;
+  
+    align-items: center;
+}
+
+.img {
+
+  margin-top: 250px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-left: 380px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+  
+  margin-left: 500px;
+    cursor: pointer;
+    color: rgb(14, 7, 227);
+    text-decoration: none;
+}
+.soci{
+   background-image: url(bg1.png);
+   color: blanchedalmond;
+   font-size: 20px;
+   list-style: none;
+}
+#blog{
+  background-color: gray;
+  
+
+}
+.btn:hover{
+  border-radius: 7px;
+  color: blue;
+  background-color: rgb(40, 80, 3);
+}
+#projects{
+  background-image: url(Bg4.png);
+}
+p{
+  color: white;
+ 
+}
+#about{
+  background-image: url(Background\ 3.png);
+
+}
+#footer{
+  background-image: url(Background\ 3.png);
+ 
+}
+#education{
+  background-image: url(bg1.png);
+}
+#contact{
+  background-image: url(Background\ 3.png);
+}
+video{
+  background-color: aqua;
+  border-radius: 34px;
+  width: 300px;
+  height: 400px;
+}
+</style>
+</head>
+<body>
+  <script src="blog.html" type="message"></script>
+
+  <nav>
+      <a href="#home" onclick="navigate('home')">home</a>
+    <a href="#about" onclick="navigate('about')">About</a>
+    <a href="#projects" onclick="navigate('projects')">Projects</a>
+    <a href="#education" onclick="navigate('education')">Education</a>
+    <a href="#contact" onclick="navigate('contact')">Contact</a>
+    <a class="g"href="#blog" onclick="navigate('blog')">Blog</a>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home" class="active">
+    <img  class="img"src="Capture.PNG" alt="Profile Image" width="200" />
+    <h1>Niyonkuru Fiston</h1>
+    <p>Web Developer & Designer</p>
+    <a href="#projects" class="btn" onclick="navigate('projects')">See My Projects</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer from Rwanda building modern websites and apps</p>
+    <p>igh school wasn’t easy. Internet was scarce, electricity came and went like push notifications, and most of the world’s programming tutorials were in English — fast, foreign English. But Fiston had grit. He downloaded PDFs in cyber cafés and read them by candlelight. He practiced on paper when the laptop battery died. He memorized code like poetry.<br><br>
+
+      Then came a scholarship — a small opportunity to study software engineering in Kigali. For the first time, Fiston had stable Wi-Fi, like a dream come true. There, he discovered JavaScript, Node.js, and eventually MySQL. His favorite combo? Express.js + MySQL — simple, elegant, and powerful.br<br><br>
+      
+      He began building small applications: a to-do list, a weather app, then a personal portfolio that showcased his journey and work. He didn’t stop there. He started writing blog posts to help other young Rwandans learn to code.<br><br>
+      
+      </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <img src="fis.jpg.crdownload" width="300" height="200" />
+    <div class="project">
+      
+     
+
+      <!-- <video src="Blessed - Meddy (Official Music Video)(720P_HD).mp4" controls></video><br><br> -->
+      <h3>Project Title</h3>
+
+      <p>Brief project description goes here.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JS</p>
+      <p>1. Portfolio Website (Frontend)
+        A responsive personal website that includes:
+        
+        Home section (with a welcome message)
+        
+        About Me
+        
+        Skills
+        
+        Projects
+        
+        Blog or Articles
+        
+        Contact form (optional: connected to backend or email)
+        
+        Clean design using HTML, CSS, and JavaScript (optional: Tailwind or Bootstrap)
+        
+        🔹 2. Backend Project (Node.js + Express + MySQL)
+        We'll build a backend system that includes:
+        
+        Employee management (CRUD operations)
+        
+        empcode encryption using crypto or bcrypt
+        
+        REST API with Express.js
+        
+        Connected to MySQL database
+        
+        Optional: simple auth/login system
+        
+        </p>
+      <a href="#">Find on GitHub</a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <h4>🎓 My Education Journey
+      I began my academic journey at EP Bumbogo, where I built a strong foundation in my early studies during O'Level. I then moved to ES Bumbogo to complete my O'Level education, where I developed a deep interest in technology and problem-solving. <br><br>
+      
+      For my A'Level, I attended ETSK Musha, a technical school that sharpened my skills in software development and computer systems. It was there that I began to work on real-world projects, exploring coding languages, databases, and system design. ETSK Musha played a big role in shaping me into the passionate and driven software developer I am today.
+      
+      </h4>
+    <p><b>Ecole Technique Saint Kizito Musha</b></p>
+    <p>Software Development</p>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email:fistonn97@gmail.com</p>
+    <p>Phone: +250 780274292</p>
+  </section>
+  
+
+  <section id="blog">
+  
+    <h2>Blog</h2>
+    <div id="blog">
+      <p>Blog previews or summaries will go here...</p>
+    </div>
+    <a href="blog.html" class="btn">Get All Blogs</a>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url(Background\ 3.png);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .blog-form {
+      background-image: url(Background\ 3.png);
+      padding: 25px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .blog-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .blog-form input[type="text"],
+    .blog-form textarea {
+  
+      width: 100%;
+      
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+    }
+
+    .blog-form button {
+      padding: 12px 20px;
+      background-color: gray;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .blog-form button:hover {
+      background-color: #4e5702;
+    }
+    form{
+      background-image:url() ;
+    }
+    .em{
+      border-radius: 12px;
+      width: 100%;
+      height: 40px;
+    }
+    .content{
+      background-color: darkslategray;
+      color: azure;
+    }
+  </style>
+  <form class="blog-form" method="get"  action="blog.html">
+    <h2>New Blog Post</h2>
+
+    <label>Title/name</label>
+    <input type="text" id="tit" name="name" placeholder="Enter blog name" required>
+
+    <label>email</label>
+    <input class="em" type="email" id="imail" name="email" placeholder="Your email" required>
+
+    <label >Content/message</label>
+    <textarea class="content" name="content" rows="10" placeholder="Write your blog here..." required></textarea>
+
+    <button type="submit" action="get">Post Blog</button>
+  </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Niyonkuru Fiston</p>
+    <div class="soci">
+      <ul>
+     <li> <b><a href="#">LinkedIn</a></b></li>
+     <li><b><a href="#">GitHub</a></b></li>
+     <li><b><a href="#">Yahoo</a></b></li>
+      <li> <b><a href="#">Twitter</a></b></li>
+    </ul>
+    </div>
+  </footer>
+
+  <script>
+    function navigate(blog) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        section.classList.remove("active");
+      });
+      document.getElementById(sectionId).classList.add("active");
+      history.pushState(null, "", "blog.html" + sectionId);
+    }
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Niyonkuru Fiston Portfolio</title>
+  <style>
+    body {
+      color: beige;
+      background-image: url(bg.png);
+      margin: 0;
+    }
+    nav {
+      color: blue;
+      font-size: 40px;
+      height: 100px;
+      background: skyblue;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: blue;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #home {
+      background-image: url(bg2.png);
+      color: lemonchiffon;
+    }
+    section {
+      padding: 20px;
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .btn:hover {
+      border-radius: 7px;
+      color: blue;
+      background-color: rgb(40, 80, 3);
+    }
+    .img {
+      margin-top: 250px;
+      cursor: pointer;
+      border-radius: 100%;
+      margin-left: 380px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      margin-left: 500px;
+      cursor: pointer;
+      color: rgb(14, 7, 227);
+      text-decoration: none;
+    }
+    .soci {
+      background-image: url(bg1.png);
+      color: blanchedalmond;
+      font-size: 20px;
+    }
+    #projects {
+      background-image: url(Bg4.png);
+    }
+    #about {
+      background-image: url(Background\ 3.png);
+    }
+    #footer {
+      background-image: url(Background\ 3.png);
+    }
+    #education {
+      background-image: url(bg1.png);
+    }
+    #contact {
+      background-image: url(Background\ 3.png);
+    }
+    video {
+      background-color: aqua;
+      border-radius: 34px;
+      width: 300px;
+      height: 400px;
+    }
+    .blog-form {
+      background-image: url(Bg4.png);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .blog-form input, .blog-form textarea {
+      width: 100%;
+      background-color: #555;
+      padding: 10px;
+      color: white;
+      margin-top: 10px;
+      border: 1px solid #5491d6;
+      border-radius: 12px;
+    }
+    .blog-form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .blog-form button:hover {
+      background-color: #0056b3;
+    }
+    .messages {
+      max-width: 600px;
+      margin: 30px auto;
+    }
+    .message-box {
+      background:white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 5px solid #007bff;
+      border-radius: 6px;
+    }
+    .message-box h4 {
+      margin: 0 0 5px;
+    }
+    .message-box small {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home" onclick="navigate('home')">Home</a>
+    <a href="#about" onclick="navigate('about')">About</a>
+    <a href="#projects" onclick="navigate('projects')">Projects</a>
+    <a href="#education" onclick="navigate('education')">Education</a>
+    <a href="#contact" onclick="navigate('contact')">Contact</a>
+    <a href="#blog" onclick="navigate('blog')">Blog</a>
+  </nav>
+
+  <section id="home" class="active">
+    <img class="img" src="Capture.PNG" alt="Profile Image" width="200" />
+    <h1>Niyonkuru Fiston</h1>
+    <p>Web Developer & Designer</p>
+    <a href="#projects" class="btn" onclick="navigate('projects')">See My Projects</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer from Rwanda building modern websites and apps...</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <img src="fis.jpg" width="300" height="200" />
+    <div class="project">
+      <h3>Project Title</h3>
+      <p>Brief project description goes here.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JS</p>
+      <a href="#">Find on GitHub</a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><b>Ecole Technique Saint Kizito Musha</b></p>
+    <p>Software Development</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: fistonn97@gmail.com</p>
+    <p>Phone: +250 780274292</p>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <form class="blog-form" id="blogForm">
+      <h2>Send a Blog Message</h2>
+      <label for="tit">Name:</label>
+      <input type="text" id="tit" required>
+
+      <label for="imail">Email:</label>
+      <input type="email" id="imail" required>
+
+      <label for="msg">Message:</label>
+      <textarea id="msg" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="messages" id="blogMessages"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Niyonkuru Fiston</p>
+    <div class="soci">
+      <ul>
+        <li><b><a href="#">LinkedIn</a></b></li>
+        <li><b><a href="#">GitHub</a></b></li>
+        <li><b><a href="#">Yahoo</a></b></li>
+        <li><b><a href="#">Twitter</a></b></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    function navigate(sectionId) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => section.classList.remove("active"));
+      document.getElementById(sectionId).classList.add("active");
+    }
+
+    window.onload = function () {
+      loadMessages();
+    };
+
+    document.getElementById("blogForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("tit").value;
+      const email = document.getElementById("imail").value;
+      const message = document.getElementById("msg").value;
+
+      const blogMessages = JSON.parse(localStorage.getItem("blogMessages")) || [];
+      blogMessages.push({ name, email, message });
+
+      localStorage.setItem("blogMessages", JSON.stringify(blogMessages));
+      this.reset();
+      loadMessages();
+      alert("Message saved successfully!");
+    });
+
+    function loadMessages() {
+      const messages = JSON.parse(localStorage.getItem("blogMessages")) || [];
+      const container = document.getElementById("blogMessages");
+      container.innerHTML = "";
+
+      if (messages.length === 0) {
+        container.innerHTML = "<p>No messages yet.</p>";
+        return;
+      }
+
+      messages.forEach(msg => {
+        const div = document.createElement("div");
+        div.classList.add("message-box");
+        div.innerHTML = `
+          <h4>${msg.name} <small>(${msg.email})</small></h4>
+          <p>${msg.message}</p>
+        `;
+        container.appendChild(div);
+      });
+    }
+  </script>
+
+</body>
+</html>
